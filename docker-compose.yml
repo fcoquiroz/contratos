@@ -1,0 +1,16 @@
+﻿version: "3"
+services:
+    app:
+        build:
+            context: ./
+            dockerfile: scontracts/Dockerfile
+        expose:
+            - 80
+        environment:
+            - VIRTUAL_HOST=contratosmovil.solistica.com
+            - LETSENCRYPT_HOST=contratosmovil.solistica.com
+            - LETSENCRYPT_EMAIL=francisco.quiroz@solistica.com
+networks:
+    default:
+        external:
+            name: webproxy

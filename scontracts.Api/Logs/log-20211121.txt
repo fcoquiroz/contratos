@@ -1,0 +1,6 @@
+2021-11-21T16:32:18.2881869-06:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-11-21T16:32:18.2969205-06:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-11-21T16:32:18.3000396-06:00  [INF] Content root path: "D:\Movit\contratos\contratos_movil\Movil\scontracts.Api" (b5d60022)
+2021-11-21T16:32:18.3494994-06:00 800005dc-0002-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:65010/   (ca22a1cb)
+2021-11-21T16:32:18.4657437-06:00 800005dc-0002-fb00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2021-11-21T16:32:19.1753333-06:00 800005dc-0002-fb00-b63f-84710c7967bb [INF] Request finished in 812.9435ms 404  (791a596a)

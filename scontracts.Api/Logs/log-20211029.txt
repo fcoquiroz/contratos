@@ -1,0 +1,6 @@
+2021-10-29T08:25:09.9859177-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-10-29T08:25:10.0016672-05:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-10-29T08:25:10.0034747-05:00  [INF] Content root path: "C:\tfsSolistica\Movil\scontracts.Api" (b5d60022)
+2021-10-29T08:25:10.0320743-05:00 80000004-0006-f700-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:65010/   (ca22a1cb)
+2021-10-29T08:25:10.0982636-05:00 80000004-0006-f700-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2021-10-29T08:25:10.2005396-05:00 80000004-0006-f700-b63f-84710c7967bb [INF] Request finished in 170.803ms 404  (791a596a)

@@ -1,0 +1,134 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>1a90327f-974e-4d6e-8afb-47cba44999f1</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\UserController.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Repository\CatAvisos.cs" />
+    <Compile Remove="Repository\CatComercial.cs" />
+    <Compile Remove="Repository\CatDiaFestivo.cs" />
+    <Compile Remove="Repository\CatDocumentacion.cs" />
+    <Compile Remove="Repository\CatEstatus.cs" />
+    <Compile Remove="Repository\CatIdioma.cs" />
+    <Compile Remove="Repository\CatLdap.cs" />
+    <Compile Remove="Repository\CatModulos.cs" />
+    <Compile Remove="Repository\CatModulosMenuporRol.cs" />
+    <Compile Remove="Repository\CatPais.cs" />
+    <Compile Remove="Repository\CatPantallas.cs" />
+    <Compile Remove="Repository\CatPermisos.cs" />
+    <Compile Remove="Repository\CatPrioridad.cs" />
+    <Compile Remove="Repository\CatProveedor.cs" />
+    <Compile Remove="Repository\CatResponsables.cs" />
+    <Compile Remove="Repository\CatRol.cs" />
+    <Compile Remove="Repository\CatTipoAccion.cs" />
+    <Compile Remove="Repository\CatTipoContrato.cs" />
+    <Compile Remove="Repository\CatTipoContratoSolicitud.cs" />
+    <Compile Remove="Repository\CatTipoDocumento.cs" />
+    <Compile Remove="Repository\CatTipoMoneda.cs" />
+    <Compile Remove="Repository\CatUnidad.cs" />
+    <Compile Remove="Repository\CatUnidadUsuario.cs" />
+    <Compile Remove="Repository\CatUsuario.cs" />
+    <Compile Remove="Repository\CfgContratoUsuario.cs" />
+    <Compile Remove="Repository\CfgCorreos.cs" />
+    <Compile Remove="Repository\CfgPrioridadComplejidad.cs" />
+    <Compile Remove="Repository\CfgPrioridadComplejidadHistorico.cs" />
+    <Compile Remove="Repository\CfgPrioridadComplejidadSegunda.cs" />
+    <Compile Remove="Repository\CfgUsuarioUnidadConsulta.cs" />
+    <Compile Remove="Repository\ConsisContext.cs" />
+    <Compile Remove="Repository\ContratosIndividuales2011.cs" />
+    <Compile Remove="Repository\TbBaseUnidades.cs" />
+    <Compile Remove="Repository\TbContratos.cs" />
+    <Compile Remove="Repository\TbContratosAppointment.cs" />
+    <Compile Remove="Repository\TbContratosDetalle.cs" />
+    <Compile Remove="Repository\TbContratosDocumentacion.cs" />
+    <Compile Remove="Repository\TbContratosEmail.cs" />
+    <Compile Remove="Repository\TbContratosFinales.cs" />
+    <Compile Remove="Repository\TbContratosHistorial.cs" />
+    <Compile Remove="Repository\TbContratosSeguimiento.cs" />
+    <Compile Remove="Repository\TbContratosVersiones.cs" />
+    <Compile Remove="Repository\TbFolioConsecutivo.cs" />
+    <Compile Remove="Repository\TbHistorialContratos.cs" />
+    <Compile Remove="Repository\TbHistorialEstatus.cs" />
+    <Compile Remove="Repository\TbHistorialParos.cs" />
+    <Compile Remove="Repository\TbHistorialPrioridad.cs" />
+    <Compile Remove="Repository\TbHistorialTipoContrato.cs" />
+    <Compile Remove="Repository\TbLog.cs" />
+    <Compile Remove="Repository\TbLog2.cs" />
+    <Compile Remove="Repository\TbParametros.cs" />
+    <Compile Remove="Repository\TbUsuarioContrasenias.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Logs\empty.txt" />
+    <None Remove="scontracts.Api.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Logs\empty.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scontracts.Api.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.6.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="8.6.2" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.2" />
+    <PackageReference Include="MediatR" Version="8.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Exchange.WebServices" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.8" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.0-preview3.19555.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0-preview3.19553.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0-preview3.19558.8" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\scontracts.Shared\scontracts.Shared.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Exchange.WebServices">
+      <HintPath>bin\Release\netcoreapp3.1\Microsoft.Exchange.WebServices.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+</Project>
